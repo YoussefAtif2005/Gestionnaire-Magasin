@@ -1,0 +1,22 @@
+Modèle Relationnel
+
+
+  Produit(id_produit, nom_produit, pays, quantite, prix_unitaire)
+
+
+  Clients(id_client, nom, prenom, date_naissance, sexe, numero_tel, date_dernier_achat)
+
+
+  Commercents(id_commercent, nom, prenom, salaire, date_embauche, num_tel)
+
+
+  Ventes(id_vente, id_client, id_commercent, id_produit, quantite, prix_unitaire)
+
+
+Clés étrangères :
+
+	id_client → Clients(id_client)
+
+	id_commercent → Commercents(id_commercent)
+
+	id_produit → Produit(id_produit)
